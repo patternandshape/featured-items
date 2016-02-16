@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* For testing only */
+
+*:not(body):not(html):not(.container) {
+  box-sizing:border-box;
+  border:2px dashed #000;
+}
+
+/* End for testing */
+
+@-ms-viewport{
+  width: device-width;
+}
+
+html, body {
+  margin: 0;
+}
+
+h1 {
+  background-color: light gray;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.nav {
+  height: 20vh;
+  width: 100%;
+  float: left;
+  margin-top: -8em;
+
+}
+
+.nav h2 {
+  height: 5vh;
+  width: 50%;
+  padding-top: -.3em;
+  background-color: #DFBC5E;
+}
+
+.nav ul {
+    display: inline;
+    /*width: 50%;*/
+    list-style: none;
+    height: 20vh;
+    margin: auto;
+
+}
+
+li {
+  /*display:inline;*/
+  float: left;
+  width: 20%;
+  background-color: #DFBC5E;
+  margin-right: 2em;
+  height: 2.5vh;
+}
+
+.header {
+  margin-top: 30%;
+  height: 30vh;
+}
+
+.header h1 {
+  height: 5vh;
+  background-color: #8AA7FF;
+}
+
+h4 {
+  height: 3vh;
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+p {
+  height: 25vh;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+img {
+  width: 100%;
+  height: 50vh;
+  margin-top: -3em;
+  background-color: #FFAF78;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1280px) {}
+
+  .clearfix:after {
+       visibility: hidden;
+       display: block;
+       font-size: 0;
+       content: " ";
+       clear: both;
+       height: 0;
+       }
