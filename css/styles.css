@@ -23,10 +23,6 @@ html, body {
   margin: 0;
 }
 
-h1 {
-  background-color: light gray;
-}
-
 .container {
   width: 90%;
   margin-left: auto;
@@ -61,7 +57,6 @@ h1 {
 }
 
 li {
-  /*display:inline;*/
   float: left;
   width: 20%;
   background-color: #DFBC5E;
@@ -111,7 +106,6 @@ img {
   float: left;
   width: 30%;
   height: 3vh;
-
 }
 
 .nav ul {
@@ -149,13 +143,57 @@ img {
 h4 {
   height: 1.5vh;
 }
-p {
-  
 }
 
-}
+@media screen and (min-width: 1280px) {
+  .nav h2 {
+    width: 20%;
+    height: 6vh;
+    margin: 0px;
+  }
 
-@media screen and (min-width: 1280px) {}
+  .nav ul {
+    margin: 1em 1em 0 0;
+  }
+
+  .nav li {
+    float: right;
+  }
+
+    header {
+    margin-bottom: 13em;
+  }
+
+    header h1 {
+    height: 10vh;
+  }
+
+  .col1, .col2, .col3, .col4 {
+    float: left;
+    width: 23%;
+    text-align: left;
+  }
+
+  .col1, .col3 {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+  h4 {
+    height: 3vh;
+  }
+
+  img {
+    width: 100%;
+    height: 35vh;
+  }
+
+  .col1 p, .col2 p, .col3 p, .col4 p {
+    background-color: #8AA7FF;
+    height:40vh;
+    margin-bottom: 3em;;
+    }
+}
 
   .clearfix:after {
        visibility: hidden;
